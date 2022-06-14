@@ -9,7 +9,7 @@ exports.handler = async (event) => {
   const res = await billingRepo.makeRequest()
   const response = {
       statusCode: 200,
-      body: 'Upload Action succesfully',
+      body: 'continous integration Action succesfully',
   };
   return response;
 };
