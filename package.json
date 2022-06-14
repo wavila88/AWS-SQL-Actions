@@ -1,0 +1,14 @@
+{
+  "name": "aws-sqlserver",
+  "version": "1.0.0",
+  "description": "Call sp from lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Willy",
+  "license": "ISC",
+  "dependencies": {
+    "mssql": "^8.1.2"
+  }
+}
