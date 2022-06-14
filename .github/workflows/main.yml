@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '12'
+      #use credentials to access ASW    
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -24,6 +25,7 @@ jobs:
           CI: true
         run: |
           npm ci
+        #First i create zip file next I deploy it into lambda
       - name: deploy
         run: |
           zip -j deploy.zip ./*
