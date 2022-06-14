@@ -28,5 +28,5 @@ jobs:
         #First i create zip file next I deploy it into lambda
       - name: deploy
         run: |
-          zip -q deploy.zip ./*
+          zip -r deploy.zip ./*
           aws lambda update-function-code --function-name  CallSpChangeData --zip-file fileb://deploy.zip
